@@ -1,8 +1,7 @@
 package entidades;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+
 
 public class ContaCorrent extends Conta{
 

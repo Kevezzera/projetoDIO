@@ -11,13 +11,7 @@ void main() {
     cc.depositar(2000);
 
 
-
-//    cp.setName("Keven Lima");
-//    cp.setNascimento("21/05/1996");
-//    cp.depositar(2000);
-//    cp.sacar(3000);
     String divisao = "##########################";
-
     System.out.println("----- BANCARD -----");
     System.out.println(cadastro);
     System.out.println(divisao);
