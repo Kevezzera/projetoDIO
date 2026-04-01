@@ -1,12 +1,25 @@
+import entidades.ContaCorrent;
+import entidades.ContaPoupanca;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
     ContaCorrent cc = new ContaCorrent("0998080", "987970098-9");
+    ContaPoupanca cp = new ContaPoupanca("0998080", "987970098-9");
 
-    cc.setName("Keven Lima");
-    cc.setNascimento("21/05/1996");
+    String cadastro =  cc.cadatro("Keven Lima", 1996, "60670252301");
     cc.depositar(2000);
-    cc.sacar(3000);
 
-    System.out.println(cc.toString());
+
+
+//    cp.setName("Keven Lima");
+//    cp.setNascimento("21/05/1996");
+//    cp.depositar(2000);
+//    cp.sacar(3000);
+    String divisao = "##########################";
+
+    System.out.println("----- BANCARD -----");
+    System.out.println(cadastro);
+    System.out.println(divisao);
+    System.out.println(cc.extrato());
 }

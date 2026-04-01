@@ -1,4 +1,6 @@
-public abstract class Conta implements Regras{
+package entidades;
+
+public abstract class Conta implements Regras {
     private String agencia;
     private String conta;
     private double saldo;
@@ -33,18 +35,7 @@ public abstract class Conta implements Regras{
         this.saldo = saldo;
     }
 
-    public void depositar(double valor){
-        this.setSaldo(this.saldo + valor);
-    }
+    public abstract String depositar(double valor);
 
-    @Override
-    public String toString() {
-        return "Conta{" +
-                "agencia='" + agencia + '\'' +
-                ", conta='" + conta + '\'' +
-                ", saldo=" + saldo +
-                '}';
-    }
-
-    public abstract void sacar(double valor);
+    public abstract String sacar(double valor);
 }
