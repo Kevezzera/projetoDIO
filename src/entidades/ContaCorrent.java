@@ -86,7 +86,7 @@ public class ContaCorrent extends Conta{
         setCpf(cpf);
         setNascimentoAno(ano);
         setCadastrado(true);
-        return "Sucesso! Seja Bem Vindo(a)!";
+        return "Cadastrado! Seja Bem Vindo(a) " + this.name + "!👋";
     }
 
 }
