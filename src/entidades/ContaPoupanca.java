@@ -20,9 +20,9 @@ public class ContaPoupanca extends Conta{
     @Override
     public String sacar(double valor) {
         if(!this.isCadastrado()) return "ERRO! Usuario não cadastrado!";
-        if (valor < getSaldo()) return "ERRO! Saldo insuficiente";
+        if (valor > getSaldo()) return "ERRO! Saldo insuficiente";
         setSaldo(getSaldo() - valor);
-        return "AGUARDE! Sacando!";
+        return "AGUARDE! Sacando o dinheiro!";
     }
 
     public String extrato(){
