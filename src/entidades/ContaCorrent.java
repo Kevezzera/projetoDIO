@@ -6,8 +6,8 @@ import java.time.LocalDate;
 public class ContaCorrent extends Conta{
 
     //CONSTRUTOR
-    public ContaCorrent(String agencia, String conta) {
-        super(agencia, conta);
+    public ContaCorrent() {
+
     }
 
 

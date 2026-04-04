@@ -9,9 +9,8 @@ public abstract class Conta {
     private double saldo;
     private boolean cadastrado;
 
-    public Conta(String agencia, String conta) {
-        setAgencia(agencia);
-        setConta(conta);
+    public Conta() {
+
     }
 
     public String getAgencia() {

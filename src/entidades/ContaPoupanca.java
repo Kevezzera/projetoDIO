@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class ContaPoupanca extends Conta{
 
 
-    public ContaPoupanca(String agencia, String conta) {
-        super(agencia, conta);
+    public ContaPoupanca() {
+
     }
 
     @Override
